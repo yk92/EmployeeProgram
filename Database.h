@@ -27,3 +27,6 @@ namespace Records {
 			
 			std::vector<Employee> mEmployees;
 			int mNextEmployeeNumber;
+	
+	};
+}
