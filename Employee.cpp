@@ -5,7 +5,7 @@ using namespace std;
 
 namespace Records {
 	
-	Employee:Employee()
+	Employee::Employee()
 		: mFirstName("")
 		, mLastName("")
 		, mEmployeeNumber(-1)
@@ -17,7 +17,7 @@ namespace Records {
 		setSalary(getSalary() + raiseAmount);
 	}
 	
-	void Employee::demote(int demeritAmount); {
+	void Employee::demote(int demeritAmount) {
 		setSalary(getSalary() - demeritAmount);
 	}
 	
@@ -61,7 +61,7 @@ namespace Records {
 		return mLastName;
 	}
 	
-	void Employee:setEmployeeNumber(int employeeNumber) {
+	void Employee::setEmployeeNumber(int employeeNumber) {
 		
 		mEmployeeNumber = employeeNumber;
 	}
@@ -79,5 +79,10 @@ namespace Records {
 	int Employee::getSalary() const {
 		
 		return mSalary;
+	}
+	
+	bool Employee::getIsHired() const {
+		
+		return mHired;
 	}
 }

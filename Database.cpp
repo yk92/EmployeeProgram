@@ -18,7 +18,7 @@ namespace Records {
 		theEmployee.hire();
 		mEmployees.push_back(theEmployee);
 		
-		return mEmployees([mEmployees.size() - 1];
+		return mEmployees[mEmployees.size() - 1];
 	
 	}
 		
